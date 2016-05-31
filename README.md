@@ -1,2 +1,3 @@
 # santa-cruz-escape
-www.allegravilla.com
+
+Copyright 2016 Michael Bachand
