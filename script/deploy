@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Usage: ssh <user>@<machine> 'bash -s' < deploy
+
+set -o nounset
+set -e
+
+REPO_URL='https://github.com/bachand/santa-cruz-escape.git'
+
+CLONE_DIR="$HOME/apps/allegra_villa/$(date +%s)"
+SITE_DIR="$CLONE_DIR/src"
+
+DOCUMENT_ROOT="$HOME/public_html/allegra_villa"
+DOCUMENT_ROOT_TMP="$DOCUMENT_ROOT"'_temp'
+
+git clone --depth=1 --branch=master "$REPO_URL" "$CLONE_DIR"
+
+if [[ -h "$DOCUMENT_ROOT" ]]; then
+  # It already exist, use mv to change the target path atomically.
+  ln -s "$SITE_DIR" "$DOCUMENT_ROOT_TMP"
+  mv -f -T "$DOCUMENT_ROOT_TMP" "$DOCUMENT_ROOT" # -T causes mv to treat $DEST as a normal file.
+else
+  # It doesn't exist set, just a simple creation.
+  ln -s "$SITE_DIR" "$DOCUMENT_ROOT"
+fi
