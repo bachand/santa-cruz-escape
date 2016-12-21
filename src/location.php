@@ -39,7 +39,7 @@
 
               <td valign="right" width="773" colspan="4">
                 <iframe width="773" height="500" frameborder="0" style="border:0"
-src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJRb8zYDYVjoARcrhoK_U5j1A&key=..." allowfullscreen></iframe>
+src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJRb8zYDYVjoARcrhoK_U5j1A&key=AIzaSyBnEQwdOpY9FOCr_uLIw72IroOgUSPlZVE" allowfullscreen></iframe>
               </td>
             </tr>
 
