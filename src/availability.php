@@ -33,6 +33,11 @@
                       The master bedroom, complete with walk-in closet, spacious bathroom, HDTV, and deck access, is the perfect refuge from rowdy kids.
                     </td>
                   </tr>
+                  <tr>
+                    <td align="center">
+                      <div style="display:inline-block"><a href="http://www.vrbo.com/232360" rel="nofollow"><img src="http://www.vrbo.com/haow/api/image/vrbo/vrbo/232360/reviews" alt="HomeAway Property" style="border:none;" rel="nofollow"></a></div>
+                    </td>
+                  </tr>
                 </table>
               </td>
 
